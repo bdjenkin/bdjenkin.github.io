@@ -1,5 +1,149 @@
+
+@purple: #581845;
+@magenta: #900C3F;
+@pink: #C70039;
+@orange: #FF5733;
+@yellow: #a78520;
+
 html {
     margin: 0
+}
+
+body {
+  background: @purple;
+  color: white;
+}
+
+.purple-bg {
+  background: @purple;
+}
+.magenta-bg {
+  background: @magenta;
+}
+.pink-bg {
+  background: @pink;
+}
+.orange-bg {
+  background: @orange;
+}
+.yellow-bg {
+  background: @yellow;
+}
+.white-bg {
+  background: white;
+  color: #000;
+  display: flex;
+
+  h5 {
+    font-size: 34px;
+    padding: 0px 15px 5px 15px;
+  }
+  p {
+    font-size: 20px;
+    padding: 15px 15px;
+    line-height: 180%;
+  }
+  .content {
+    align-self: center;
+  }
+}
+
+nav {
+  padding-top: 10px;
+  
+  >.container {
+    max-width: 960px;
+    >.row {
+      span.logo {
+        display: inline-block;
+        font-size: 20px;
+        >i {
+          font-size: 20px;
+          margin: 0 3px;
+        }
+        >i:first-child {
+          font-size: 30px;
+        }
+        >i:last-child {
+          font-size: 24px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      >.nav {
+        >.nav-item {
+          >a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.thisme {
+  h1 {
+    font-size: 200px;
+    line-height: 110%;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 190%;
+  }
+}
+
+section.workit {
+  padding: 0;
+
+  .wordage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    justify-content: center;
+
+    i {
+      font-size: 80px;
+
+      &.fa-mobile {
+        font-size: 110px;
+        line-height: 65px;
+      }
+    }
+    div {
+      font-size: 20px;
+    }
+  }
+}
+
+.portfolio {
+  background: white;
+  padding: 50px 0;
+  .container {
+    .row {
+      .col {
+        .web-tech {
+          background: white;
+          display: block;
+          text-align: center;
+          img {
+            max-width: 100px;
+          }
+          &.css>img {
+            max-width: 70px;
+          }
+          span.react {
+            color: #61dbfb;
+            font-size: 20px;
+            font-weight: 600;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 .container {
@@ -21,6 +165,13 @@ html {
         }
     }
 
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22) !important;
+}
+.workpill {
+  max-height: 565px;
 }
 
 .product-device {
@@ -69,5 +220,6 @@ html {
     flex: 1;
   }
 }
+
 
 .overflow-hidden { overflow: hidden; }
