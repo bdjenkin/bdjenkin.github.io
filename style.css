@@ -189,7 +189,7 @@ footer #my-waters-boy p img {
     margin: 50px 0;
   }
   footer {
-    height: 150vh;
+    height: 200vh;
   }
   footer #my-waters-boy {
     background: #03071e;
@@ -203,6 +203,11 @@ footer #my-waters-boy p img {
   }
   footer #my-waters-boy p img {
     width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  nav > .container > .row span.logo {
+    display: none;
   }
 }
 .overflow-hidden {
