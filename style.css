@@ -132,9 +132,6 @@ section.workit .wordage div {
 .shadow {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22) !important;
 }
-.workpill {
-  max-height: 565px;
-}
 .product-device {
   position: absolute;
   right: 10%;
