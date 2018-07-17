@@ -100,6 +100,7 @@ section.workit {
     display: flex;
     flex-direction: column;
     min-height: 350px;
+    padding: 0 10px;
     justify-content: center;
 
     i {
@@ -127,7 +128,7 @@ section.workit {
           display: block;
           text-align: center;
           img {
-            max-width: 100px;
+            width: 100px;
           }
           &.css>img {
             max-width: 70px;
@@ -216,6 +217,15 @@ section.workit {
   .flex-md-equal > * {
     -ms-flex: 1;
     flex: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    padding: .25rem .5rem;
+  }
+  section.thisme h1 {
+    font-size: 60px;
   }
 }
 
