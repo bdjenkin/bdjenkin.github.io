@@ -2,23 +2,27 @@ html {
   margin: 0;
 }
 body {
-  background: #581845;
+  background: #2D112A;
   color: white;
+  position: relative;
 }
 .purple-bg {
-  background: #581845;
+  background: #2D112A;
 }
 .magenta-bg {
-  background: #900C3F;
+  background: #500130;
 }
 .pink-bg {
-  background: #C70039;
+  background: #900835;
 }
 .orange-bg {
-  background: #FF5733;
+  background: #FF563C;
 }
 .yellow-bg {
-  background: #a78520;
+  background: #FE7F42;
+}
+.beige-bg {
+  background: #FFDCC8;
 }
 .white-bg {
   background: white;
@@ -64,6 +68,9 @@ nav > .container > .row span.logo > i:last-child {
 }
 nav > .container > .row > .nav > .nav-item > a {
   color: white;
+}
+nav > .container > .row > .nav > .nav-item > a.active {
+  border-bottom: 1px solid white;
 }
 section.thisme h1 {
   font-size: 200px;
@@ -117,6 +124,16 @@ section.workit .wordage div {
 .portfolio .container .row .col .web-tech:hover {
   text-decoration: none;
 }
+.portimg {
+  width: 100%;
+  height: auto;
+}
+.github-widget {
+  background: white;
+}
+#templateGraphic {
+  margin: 116px 0;
+}
 .container {
   max-width: 960px;
 }
@@ -134,53 +151,11 @@ section.workit .wordage div {
   text-decoration: none;
 }
 .shadow {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 15px 15px rgba(0, 0, 0, 0.3) !important;
 }
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-}
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
+@media (max-width: 768px) {
+  section.thisme h1 {
+    font-size: 100px;
   }
 }
 @media (max-width: 576px) {

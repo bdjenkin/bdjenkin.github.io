@@ -1,9 +1,10 @@
 
-@purple: #581845;
-@magenta: #900C3F;
-@pink: #C70039;
-@orange: #FF5733;
-@yellow: #a78520;
+@purple: #2D112A;
+@magenta: #500130;
+@pink: #900835;
+@orange: #FF563C;
+@yellow: #FE7F42;
+@beige: #FFDCC8;
 
 html {
     margin: 0
@@ -12,6 +13,7 @@ html {
 body {
   background: @purple;
   color: white;
+  position: relative;
 }
 
 .purple-bg {
@@ -28,6 +30,9 @@ body {
 }
 .yellow-bg {
   background: @yellow;
+}
+.beige-bg {
+  background: @beige;
 }
 .white-bg {
   background: white;
@@ -78,12 +83,17 @@ nav {
         >.nav-item {
           >a{
             color: white;
+
+            &.active {
+              border-bottom:1px solid white;
+            }
           }
         }
       }
     }
   }
 }
+
 
 section.thisme {
   h1 {
@@ -151,6 +161,19 @@ section.workit {
   }
 }
 
+.portimg {
+  width: 100%;
+  height: auto;
+}
+
+.github-widget {
+  background: white;
+}
+
+#templateGraphic {
+  margin: 116px 0;
+}
+
 .container {
   max-width: 960px;
 }
@@ -173,54 +196,13 @@ section.workit {
 }
 
 .shadow {
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22) !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.3) !important;
 }
 
 
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-}
-
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
+@media (max-width: 768px) {
+  section.thisme h1 {
+    font-size: 100px;
   }
 }
 
