@@ -2,7 +2,7 @@ html {
   margin: 0;
 }
 body {
-  background: #2D112A;
+  background: #FF563C;
   color: white;
   position: relative;
 }
@@ -24,6 +24,9 @@ body {
 .beige-bg {
   background: #FFDCC8;
 }
+.nav-bg {
+  background: rgba(0, 0, 0, 0.5);
+}
 .white-bg {
   background: white;
   color: #000;
@@ -43,6 +46,21 @@ body {
 }
 div.spacer {
   min-height: 60px;
+}
+.thisme h1 span {
+  opacity: 0;
+}
+.thisme h1 span:first-child {
+  transition: opacity 2s;
+}
+.thisme h1 span:last-child {
+  transition: opacity 1s;
+}
+.thisme h2 {
+  width: 100%;
+  transition: width 2s;
+  white-space: nowrap;
+  text-align: right;
 }
 nav {
   padding-top: 10px;
@@ -128,6 +146,9 @@ footer {
   height: 150vh;
   position: relative;
 }
+footer .spacer h6 {
+  font-size: 1.8rem;
+}
 footer #my-waters-boy {
   position: absolute;
   bottom: 0;
@@ -143,6 +164,7 @@ footer #my-waters-boy p {
 }
 footer #my-waters-boy p img {
   width: 100%;
+  max-width: 540px;
 }
 .portimg {
   width: 100%;
@@ -176,6 +198,7 @@ footer #my-waters-boy p img {
 @media (max-width: 768px) {
   section.thisme h1 {
     font-size: 100px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 576px) {

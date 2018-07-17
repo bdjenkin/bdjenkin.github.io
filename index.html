@@ -15,9 +15,9 @@
     <title>Ben Jenkins - Web Developer</title>
   </head>
   <body id="home">
-    <nav class="magenta-bg sticky-top">
+    <nav class="nav-bg sticky-top">
       <div class="container">
-        <div class="row no-gutters justify-content-between">
+        <div class="row no-gutters justify-content-between flex-row-reverse flex-sm-row-reverse flex-md-row flex-lg-row">
 
             <ul class="nav" role="tablist">
               <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -32,10 +32,10 @@
 
     <div class="wrapper" >
     
-      <section class="thisme">
+      <section class="thisme orange-bg">
 
         <div class="container">
-          <h1>Ben Jenkins</h1>
+          <h1><span>Ben</span> <span>Jenkins</span></h1>
           <h2>Web Developer</h2>
         </div>
 
@@ -43,20 +43,20 @@
 
       <section class="workit pink-bg" id="about">
 
-        <div class="row no-gutters">
-          <div class="col-6 col-sm-6 col-md-3 magenta-bg">
+        <div class="row no-gutters flex-row-reverse flex-sm-row flex-md-row-reverse flex-lg-row">
+          <div class="col-6 col-sm-6 col-md-3 purple-bg">
             <div class="wordage">
               <div class="py-2"><i class="fa fa-database"></i></div>
               <div class="py-2">Database driven website templates</div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-3 pink-bg">
+          <div class="col-6 col-sm-6 col-md-3 magenta-bg">
             <div class="wordage">
               <div class="py-2"><i class="fa fa-mobile"></i></div>
               <div class="py-2">Responsive pages for any screen size</div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-3 orange-bg">
+          <div class="col-6 col-sm-6 col-md-3 pink-bg">
             <div class="wordage">
               <div class="py-2"><i class="fa fa-calculator"></i></div>
               <div class="py-2">Interactive web-based tools</div>
@@ -82,6 +82,7 @@
             <div class="col py-1"><a href="#" class="web-tech" title="RESTful API web services"><img src="images/rain-drop-hi.png" /></a></div>
             <div class="col py-3"><a href="#" class="web-tech" title="PHP for server-side scripting"><img src="images/elephpant.png" /></a></div>
             <div class="col py-4"><a href="#" class="web-tech" title="MySQL for databases"><img src="images/mysql.png" /></a></div>
+            
           </div>
         </div>
 
@@ -151,6 +152,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" 
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" 
             crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function() {
+        //window.alert("babe oh")
+        $(".thisme h1>span:first-child").css("opacity", 1);
+        setTimeout(function() {
+          $(".thisme h1>span:last-child").css("opacity", 1);
+          $(".thisme h2").css("width", "0");
+        }, 500)
+          
+      })
+    </script>
 
   </body>
 </html>
