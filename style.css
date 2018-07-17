@@ -165,6 +165,9 @@ section.workit .wordage div {
   section.thisme h1 {
     font-size: 60px;
   }
+  #templateGraphic {
+    margin: 50px 0;
+  }
 }
 .overflow-hidden {
   overflow: hidden;
