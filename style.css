@@ -58,7 +58,8 @@ div.spacer {
 }
 .thisme h2 {
   width: 100%;
-  transition: width 2s;
+  opacity: 0;
+  transition: width 2s, opacity 2.5s;
   white-space: nowrap;
   text-align: right;
 }
