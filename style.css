@@ -149,6 +149,10 @@ footer {
 }
 footer .spacer h6 {
   font-size: 1.8rem;
+  transition: font-size 1;
+}
+footer .spacer h6 a:hover {
+  font-size: 1.85rem;
 }
 footer #my-waters-boy {
   position: absolute;
