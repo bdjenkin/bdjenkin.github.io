@@ -73,6 +73,9 @@ body {
 div.spacer {
   min-height: 60px;
 }
+.thisme h1 {
+  text-shadow: 1px 1px 2px #969696;
+}
 .thisme h1 span {
   opacity: 0;
 }
