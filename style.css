@@ -17,6 +17,46 @@ body {
   background: linear-gradient(to bottom, #99b898 10%, #fecea8 40%, #ff847c 50%, #e84a5f 60%, #2a363b 90%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+.animated-bg {
+  background: linear-gradient(-45deg, #2A363B, #E84A5F, #FF847C, #FECEA8, #99B898);
+  background-size: 300% 300%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 150% 100%;
+  }
+  100% {
+    background-position: 400% 250%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .min-green-bg {
   background: #99B898;
 }
