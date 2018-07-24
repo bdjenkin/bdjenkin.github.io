@@ -2,9 +2,35 @@ html {
   margin: 0;
 }
 body {
-  background: #FF563C;
+  background: #2A363B;
   color: white;
   position: relative;
+}
+.gradient-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#99b898+10,fecea8+40,ff847c+50,e84a5f+60,2a363b+90 */
+  background: #99b898;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #99b898 10%, #fecea8 40%, #ff847c 50%, #e84a5f 60%, #2a363b 90%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #99b898 10%, #fecea8 40%, #ff847c 50%, #e84a5f 60%, #2a363b 90%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #99b898 10%, #fecea8 40%, #ff847c 50%, #e84a5f 60%, #2a363b 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.min-green-bg {
+  background: #99B898;
+}
+.min-yellow-bg {
+  background: #FECEA8;
+}
+.min-orange-bg {
+  background: #FF847C;
+}
+.min-red-bg {
+  background: #E84A5F;
+}
+.min-black-bg {
+  background: #2A363B;
 }
 .purple-bg {
   background: #2D112A;
@@ -212,6 +238,9 @@ footer #my-waters-boy p img {
   }
   section.thisme h1 {
     font-size: 60px;
+  }
+  section.workit .wordage {
+    min-height: 230px;
   }
   #templateGraphic {
     margin: 50px 0;
